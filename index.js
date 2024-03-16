@@ -14,12 +14,12 @@ app.use("/api/send-mail",emailRoute)
 app.use("/api/generateCertificate",emailPDF)
 app.use("/api/csvtojson",csvtojson)
 
-app.get("/", (req, res) => {
-    res.send({"message": "Hello World"});
-})
-app.get("/json", (req, res) => {
-    res.send(sampleJson);
-})
+// app.get("/", (req, res) => {
+//     res.send({"message": "Hello World"});
+// })
+// app.get("/json", (req, res) => {
+//     res.send(sampleJson);
+// })
 // app.post("/api",emailRoute )
 app.post("/test-table-data", (req, res) => {
     console.log(req.body);
